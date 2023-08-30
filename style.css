@@ -1,0 +1,205 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 200px; /* Adjust the logo size as needed */
+    padding-left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    animation: spin 1s ease infinite; /* Apply the spin animation on hover */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* End with a full 360-degree rotation */
+    }
+}
+
+.nav-links {
+    padding-right: 20px;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 18px; /* Adjust spacing between links */
+    transition: transform 0.2s;
+}
+
+.nav-links li:hover {
+    transform: scale(1.20);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-icon {
+    width: 80px; /* Adjust the icon size as needed */
+    margin-right: 2px; /* Add spacing between icon and text */
+}
+
+.link-icon-contact {
+    width: 80px; /* Adjust the icon size as needed */
+    margin-right: 2px; /* Add spacing between icon and text */
+    margin-top: 11px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+}
+
+h1 {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 0 0 460px;
+    padding: 86px;
+}
+
+.hero-content p {
+    color: #f9faf8;
+    padding-bottom: 16px;
+}
+
+button {
+    border-radius: 15px;
+    flex: 0 0 46px;
+    max-width: 116px;
+    color: #f9faf8;
+    font-weight: bold;
+    background: linear-gradient(to top, rgb(145, 236, 249), rgb(89, 89, 244));
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.20);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    max-width: 750px;
+    height: 380px;
+    border-radius: 25px;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 44px;
+    padding-bottom: 50px;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+}
+
+.game {
+    display: flex;
+    flex: 0 0 calc(12% - 0px); /* Adjust the width and spacing as needed */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+.game img {
+    max-width: 250px;
+    height: 180px;
+    border:  5px solid blue;
+    border-radius: 25px;
+    background-color: gray;
+    margin-bottom: 16px;
+    background: linear-gradient(to top, white, rgb(89, 89, 244));
+}
+
+.card {
+    max-width: 268px; /* Adjust the maximum width as needed */
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font: italic 36px/1.5 Arial, sans-serif;
+    color: #1f2937;
+    flex-grow: 1;
+    padding: 0 200px;
+    margin-bottom: 45px;
+}
+
+.quoteContainer p {
+    text-align: center;
+}
+
+.quoteContainer b {
+    text-align: right;
+}
